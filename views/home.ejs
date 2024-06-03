@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Weather app</title>
+</head>
+<body class="background">
+    <h1>Weather in <%= data.location.name %></h1>
+    <div class="res_container">
+        <p>Temperature: <%= data.current.temp_c %>°C</p>
+        <p>Chances of Rain: <%= data.current.cloud %>%</p>
+        <p>Humidity: <%= data.current.humidity %>%</p>
+        <p>Condition: <%= data.current.condition.text %> </p>
+        <p>Longitude: <%= data.location.lon %></p> <p>Lattitude: <%= data.location.lat %></p>
+    </div>
+</body>
+</html>
